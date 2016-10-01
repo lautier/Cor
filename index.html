@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Correlation 101 App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Correlation 101 App">
+  <meta name="author" content="Malgorzata Jakubowska">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Correlation 101 App</h1>
+    <h2>Calculating an r-Pearson's correlation coefficient from a .csv file</h2>
+    <p>Malgorzata Jakubowska<br/>PhD fellow, Bremen International Graduate School of Social Sciences</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The application in a nutshell</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Correlation 101 is a Shiny app that aids the user in calculating r-Pearson&#39;s correlation coefficient in two easy steps</li>
+<li>Version 1.0 uses only .csv as an input file</li>
+<li>Apart from calculating a correlation coefficient, a scatterplot is also provided to take a closer look at the variable association</li>
+<li>The file that is being read as an input can be also viewed in one of the application&#39;s tabs</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How to use it?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Read the .csv file</li>
+<li>Take a look at the output in tab 2</li>
+<li>Choose two variables you want to correlate from drop-down lists in tab 1</li>
+<li>Analyze the output (correlation coefficient and the scatterplot) in tab 3</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How it looks like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The interface is divided into four tabs
+<br>
+1. Input -  here the user can choose a file to be loaded as well as choose two variables to be correlated after loading the file <br>
+2. Table - overview of the .csv file loaded into the app <br>
+3. Correlation/plot - results of the computations <br>
+4. Documentation - basic information about the app <br></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Example output (based on data from iris dataset)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>##        cor 
+## -0.3661259
+</code></pre>
+
+<p><img src="assets/fig/iris-1.png" alt="plot of chunk iris"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The application in a nutshell'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How to use it?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How it looks like?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example output (based on data from iris dataset)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

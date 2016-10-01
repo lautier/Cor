@@ -1,0 +1,51 @@
+---
+title       : Correlation 101 App
+subtitle    : Calculating an r-Pearson's correlation coefficient from a .csv file
+author      : Malgorzata Jakubowska
+job         : PhD fellow, Bremen International Graduate School of Social Sciences
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+output: html_document
+---
+
+## The application in a nutshell
+1. Correlation 101 is a Shiny app that aids the user in calculating r-Pearson's correlation coefficient in two easy steps
+2. Version 1.0 uses only .csv as an input file
+3. Apart from calculating a correlation coefficient, a scatterplot is also provided to take a closer look at the variable association
+4. The file that is being read as an input can be also viewed in one of the application's tabs
+
+---
+
+## How to use it?
+1. Read the .csv file
+2. Take a look at the output in tab 2
+3. Choose two variables you want to correlate from drop-down lists in tab 1
+4. Analyze the output (correlation coefficient and the scatterplot) in tab 3
+
+---
+
+## How it looks like?
+The interface is divided into four tabs
+<br>
+1. Input -  here the user can choose a file to be loaded as well as choose two variables to be correlated after loading the file <br>
+2. Table - overview of the .csv file loaded into the app <br>
+3. Correlation/plot - results of the computations <br>
+4. Documentation - basic information about the app <br>
+
+
+---
+
+## Example output (based on data from iris dataset)
+
+
+```
+##        cor 
+## -0.3661259
+```
+
+![plot of chunk iris](assets/fig/iris-1.png)
+
